@@ -75,6 +75,13 @@ const CheckNewLocationsTable = () => {
 
 export default CheckNewLocationsTable;
 ```
+## Props
+
+| Prop        | Type                | Description                                                        | Default Value |
+|-------------|---------------------|--------------------------------------------------------------------|---------------|
+| regionName  | `string`            | The name of the country/region. Only predefined names in `flagMap` are supported. | **Required**  |
+| flagSize    | `number` (optional) | The size of the flag in pixels (applied via `fontSize`).           | `12`          |
+
 Key Points:
 Dynamic Flags:
 
