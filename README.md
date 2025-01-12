@@ -1,19 +1,24 @@
 # react-region-flags
 
-A React component to display country flags using Flag Icons in Material React Table.
+A React component to display country flags using Flag icons in Material React Table.
 
 Features
 Easy-to-use React component.
 Supports custom flag sizes.
 Uses standard classes from the flag-icons library.
 
-Installation
+Installation:
 
-Install the package and its required dependency:
-npm install react-region-flags flag-icons
+Install the required dependency using npm or yarn:
+
+```bash
+npm install flag-icons
+# or
+yarn add flag-icons
+```
 
 Don't forget to import the CSS file for flag-icons in your project:
-import "flag-icons/css/flag-icons.min.css";
+```import "flag-icons/css/flag-icons.min.css";```
 
 Usage with Material React Table
 The Flags component can be seamlessly integrated with Material React Table to display country flags alongside other data. Below is an example:
@@ -36,13 +41,12 @@ const CheckNewLocationsTable = () => {
                 header: 'Local Code',
             },
             {
-                accessorKey: 'name',
+                accessorKey: 'countryName',
                 header: 'Name',
                 Cell: ({ cell }) => {
-                    const countryName = locations.find(el => el.name === cell.getValue<string>())?.countryName;
                     return (
                         <div>
-                            <Flags regionName={countryName} flagSize={16} />
+                            <Flags regionName={cell.getValue<string>()} flagSize={10} />
                             {cell.getValue<string>()}
                         </div>
                     );
