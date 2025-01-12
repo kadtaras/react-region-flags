@@ -1,6 +1,6 @@
 # react-region-flags
 
-A React component to display country flags using Flag Icons.
+A React component to display country flags using Flag Icons in Material React Table.
 
 Features
 Easy-to-use React component.
