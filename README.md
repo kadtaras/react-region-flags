@@ -5,16 +5,16 @@ A React component to display country flags using Flag icons in Material React Ta
 Features
 Easy-to-use React component.
 Supports custom flag sizes.
-Uses standard classes from the flag-icons library.
+Uses standard classes from the [flag-icons library](https://github.com/lipis/flag-icons).
 
 Installation:
 
 Install the required dependency using npm or yarn:
 
 ```bash
-npm install flag-icons
+npm install flag-icons material-react-table
 # or
-yarn add flag-icons
+yarn add flag-icons material-react-table
 ```
 
 Don't forget to import the CSS file for flag-icons in your project:
